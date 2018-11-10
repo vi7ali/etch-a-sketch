@@ -4,7 +4,7 @@ const clearButton = document.querySelector("#clear");
 const containerPosition = container.getBoundingClientRect();
 const sideMax = containerPosition.width;
 
-createGrid(6);
+createGrid(16);
 
 newButton.addEventListener("click", getNewGrid);
 clearButton.addEventListener("click", clearGrid);
@@ -42,23 +42,23 @@ function addBlack(cell) {
 	let currentColor = cell.style.backgroundColor;
 	let tempString = currentColor.replace("rgb(", "");
 	tempString = tempString.replace(")", "");
-	let newColor = tempString.split(",");	
+	let newColor = tempString.split(",");
 
 	for(i=0;i<newColor.length;i++) {
-		newColor[i] = newColor[i] * 0.75;
+		newColor[i] = newColor[i] * 0.90;
 	}
 	return `rgb(${newColor.join()})`;
 }
 
 function getNewGrid() {
-	var uInput = prompt("Please enter the number of cells between 1 and 50");
+	var uInput = prompt("Please enter the number of cells between 1 and 64");
 	uInput = Number(uInput);
 	if(isNaN(uInput)) {
 		alert("Invalid input, it must be a number");
 		return;
 	}
-	else if(uInput<1 || uInput>50) {
-		alert("Invalid number. It must be between 1 and 50");
+	else if(uInput<1 || uInput>64) {
+		alert("Invalid number. It must be between 1 and 64");
 		return;
 	}
 	else {
