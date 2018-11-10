@@ -1,0 +1,32 @@
+header {
+	font-family: "Lobster", cursive;
+	text-align: center;
+}
+
+button {
+		margin-left: 50px;
+		margin-right: 50px;
+		width: 80px;
+		height: 80px;
+		border-radius: 80px;
+		outline: none;
+}
+
+#container {	
+	width: 600px;
+	height: 600px;
+	margin: 10px auto;
+	outline: 1px dotted grey;
+	font-size: 0;
+}
+
+.cell {
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid grey;
+	font-size: 1rem;
+}
+
+.painted {
+
+}
