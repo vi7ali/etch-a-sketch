@@ -40,9 +40,8 @@ function changeColor(e) {
 function addBlack(cell) {
 
 	let currentColor = cell.style.backgroundColor;
-	let tempString = currentColor.replace("rgb(", "");
-	tempString = tempString.replace(")", "");
-	let newColor = tempString.split(",");
+	let newColor = currentColor.slice(4, currentColor.length-1);
+	newColor = newColor.split(",");
 
 	for(i=0;i<newColor.length;i++) {
 		newColor[i] = newColor[i] * 0.90;
@@ -67,9 +66,9 @@ function getNewGrid() {
 }
 
 function randomPaint() {
-	let r = Math.floor(Math.random()*(256));
-	let g = Math.floor(Math.random()*(256));
-	let b = Math.floor(Math.random()*(256));
+	let r = Math.floor(Math.random()*256);
+	let g = Math.floor(Math.random()*256);
+	let b = Math.floor(Math.random()*256);
 	
 	return `rgb(${r}, ${g}, ${b})`;
 }

@@ -10,13 +10,15 @@ button {
 		height: 80px;
 		border-radius: 80px;
 		outline: none;
+		background-color: #d7d7d7;
 }
 
 #container {	
+	box-sizing: border-box;
 	width: 600px;
 	height: 600px;
 	margin: 10px auto;
-	outline: 1px dotted grey;
+	/*outline: 1px dotted grey;*/
 	font-size: 0;
 }
 
