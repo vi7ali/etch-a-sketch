@@ -11,13 +11,21 @@
 	
 	<header>
 		<h1>Etch-a-Sketch</h1>
-		<button id="bnew">New</button>
-		<button id="clear">Clear</button>		
+		<button id="bnew">Reset</button>
+		<div id="selection">
+			<input type="radio" id="random-color" value="random-color" name ="color" checked>
+			<label for="random-color">Random Color</label>
+			<input type="radio" id="darker-color" value="darker-color" name="color">
+			<label for="darker-color">Darker Color</label>
+		</div>
 	</header>
 	
 	<main>
 		<div id="container"></div>
 	</main>
+
+	<footer>		
+	</footer>
 
 <script src="./js/script.js"></script>
 </body>
