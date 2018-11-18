@@ -8,7 +8,7 @@ h1 {
 	text-decoration: underline;
 	border-radius:5px;
 	width: 500px;
-	margin: 20px auto;
+	margin: 1rem auto;
 	font-size: 3rem;
 	color: rgb(255, 100, 100);
 }
@@ -16,13 +16,13 @@ h1 {
 button {
 	color: rgb(255, 100, 100);
 	font-size: 2rem;
-	margin: 10px 50px;
+	margin: 1rem 4rem;
 	width: 100px;
 	height: 50px;
 	border-radius: 50%;
 	outline: none;
 	border-color: rgb(255, 100, 100);
-	background-color: rgb(245, 255, 239);
+	background-color: white;
 }
 
 label {
@@ -30,21 +30,19 @@ label {
 }
 
 input[type="radio"] {
-	margin-left: 10px;
+	margin-left: 1rem;
 }
 
-#container {
-	background-color: rgb(245, 255, 239);
-	display: grid;
-	grid-gap: 1px;
+#container {	
+	display: grid;	
 	width: 500px;
 	height: 500px;
-	margin: 10px auto;
-	border: 50px solid rgb(255, 50, 50);
-	border-radius: 25px;
+	margin: 1rem auto;
+	border: 4rem solid rgb(255, 100, 100);
+	border-radius: 2rem;
 }
 
 .cell {
-	border: 1px solid rgb(242, 242, 242);
-	border-radius:20%;
+	border: 1px solid rgb(255, 240, 240);
+	border-radius:10%;
 }
